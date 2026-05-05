@@ -1,0 +1,51 @@
+.input-box {
+  display: flex;
+  padding: 12px;
+  border-top: 1px solid #ddd;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+}
+
+button {
+  margin-left: 10px;
+}
+.input-box {
+  display: flex;
+  gap: 8px;
+  padding: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 10px 12px;
+
+  border: 1px solid #ccc;
+  border-radius: 12px; // 👈 rounded edges
+
+  outline: none;
+  font-size: 14px;
+}
+
+input:focus {
+  border-color: #4a90e2;
+}
+
+button {
+  padding: 10px 16px;
+
+  border: none;
+  border-radius: 12px; // 👈 rounded edges too
+
+  background-color: #4a90e2;
+  color: white;
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background-color: #357bd8;
+}

@@ -1,0 +1,12 @@
+<div class="chat-window">
+  <div class="messages">
+    <div
+      *ngFor="let msg of messages"
+      [class.user]="msg.role === 'user'"
+      [class.assistant]="msg.role === 'assistant'"
+    >
+      <div [innerHTML]="msg.content"></div>
+    </div>
+  </div>
+  <app-chat-input (send)="onSend($event)"></app-chat-input>
+</div>

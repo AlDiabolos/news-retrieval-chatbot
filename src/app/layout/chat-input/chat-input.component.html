@@ -1,0 +1,9 @@
+<div class="input-box">
+  <input
+    [(ngModel)]="input"
+    (keyup.enter)="submit()"
+    placeholder="Ask something..."
+  />
+
+  <button (click)="submit()">Send</button>
+</div>
